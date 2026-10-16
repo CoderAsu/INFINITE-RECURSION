@@ -161,6 +161,27 @@ namespace MyLibrary
 }
 
 
+
+
+
+
+
+
+namespace Running1{
+    void quack(){
+        cout << "Quack Quack!\n";
+    }
+}
+
+
+namespace Running2{
+
+    void run(){
+        Running1::quack();
+    }
+    
+}
+
 int main(){
 
     using namespace DeveloperA;
@@ -240,6 +261,13 @@ int main(){
 
     MyLibrary::display();
     MyLibrary::V1::display();
+    cout << endl;
+
+
+
+
+
+    Running2::run();
 
 
     return 0;
