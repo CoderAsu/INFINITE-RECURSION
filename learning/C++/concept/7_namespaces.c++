@@ -166,7 +166,7 @@ namespace MyLibrary
 
 
 
-
+// Calling Functions from One Namespace Inside Another Namespace
 namespace Running1{
     void quack(){
         cout << "Quack Quack!\n";
@@ -180,6 +180,50 @@ namespace Running2{
         Running1::quack();
     }
     
+}
+
+
+
+
+
+
+
+// combination of structure, enum, class and nested namespace
+namespace University
+{
+    // Structure
+    struct Student
+    {
+        string name;
+        int age;
+    };
+
+    // Enumeration
+    enum class Department
+    {
+        MCA,
+        MBA,
+        BTECH
+    };
+
+    // Class
+    class College
+    {
+    public:
+        void display()
+        {
+            cout << "Welcome to the college!\n";
+        }
+    };
+
+    // Nested namespace
+    namespace Sports
+    {
+        void play()
+        {
+            cout << "Playing cricket!\n";
+        }
+    }
 }
 
 int main(){
@@ -268,6 +312,33 @@ int main(){
 
 
     Running2::run();
+    cout << endl;
+
+
+
+
+    // combination of stucture, enum, class, and nested namespace
+
+    // Structure
+    University::Student s1{"Asu", 22};
+
+    cout << "Name: " << s1.name << '\n';
+    cout << "Age: " << s1.age << '\n';
+
+    // Enumeration
+    University::Department d = University::Department::MCA;
+
+    if (d == University::Department::MCA)
+    {
+        cout << "Department: MCA\n";
+    }
+
+    // Class
+    University::College c1;
+    c1.display();
+
+    // Nested namespace
+    University::Sports::play();
 
 
     return 0;
