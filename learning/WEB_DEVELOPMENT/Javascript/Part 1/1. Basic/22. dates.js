@@ -263,8 +263,6 @@ console.log("date3 ", dt3);
 // The behavior of  "DD-MM-YYYY" is also undefined.
 // Some browsers will try to guess the format. Some will return NaN.
 
-const dt4 = new Date("22-08-2017");
-console.log("date3", dt4);
 console.log();
 
 
