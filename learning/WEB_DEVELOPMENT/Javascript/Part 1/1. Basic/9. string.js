@@ -54,10 +54,6 @@ console.log(`One sentence is ${text1}\n`);
 */
 
 
-
-
-// breaking long lines
-
 let sen1 = "JavaScript" + " is " + "best."
 console.log(sen1);
 
