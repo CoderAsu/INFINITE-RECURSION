@@ -105,6 +105,33 @@ git revert <commit_id> --> does not remove commits. Instead, it creates a new co
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Branches are always associated with commits
 
 git branch <branch_name> --> to create a branch
