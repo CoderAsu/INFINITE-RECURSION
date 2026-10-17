@@ -22,6 +22,7 @@ console.log(answer3);
 name1 = "Johnny";
 let sen = `He's often called ${name1}`;
 console.log(sen);
+console.log();
 
 // templates allow multiline strings
 
@@ -30,7 +31,8 @@ brown fox
 jumps over
 the lazy   dog`
 
-console.log(text1);
+console.log(`One sentence is ${text1}\n`);
+
 
 
 
