@@ -38,6 +38,7 @@ const date2 = new Date("2022-03-25")
 
 console.log(date1);
 console.log(date2);
+console.log();
 
 
 
@@ -71,6 +72,8 @@ console.log(date5);
 
 // You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
 
+console.log();
+
 
 
 
@@ -92,7 +95,7 @@ console.log(date5);
 
 const cen = new Date(9, 11, 24);
 console.log(cen);
-
+console.log();
 
 
 // JavaScript Stores Dates as Milliseconds
@@ -106,6 +109,7 @@ console.log(miliSec);
 
 const miliSec2 = new Date(-100000000000);
 console.log(miliSec2);
+console.log();
 
 
 
@@ -188,6 +192,7 @@ console.log("d4 ", d4);
 
 const d5 = new Date("2015-03-25T12:00:00-06:30");
 console.log("d5 ", d5);
+console.log();
 
 
 
@@ -260,7 +265,7 @@ console.log("date3 ", dt3);
 
 const dt4 = new Date("22-08-2017");
 console.log("date3", dt4);
-
+console.log();
 
 
 
